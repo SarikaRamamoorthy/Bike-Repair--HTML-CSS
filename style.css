@@ -1,14 +1,19 @@
+body {
+    background-color: #fc5e55;
+}
 .container {
     width : 1024px;
     min-height: 300px;
-    background-color: aquamarine;
     margin-left: auto;
     margin-right:auto;
 }
 
 header {
     min-height: 100px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 main {
@@ -21,7 +26,7 @@ main {
     min-height: 300px;
     background-color: cornflowerblue;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card1 {
@@ -43,9 +48,9 @@ main {
 }
 
 .herobox1 {
-    width: 50%;
+    flex:2;
 }
 
 .herobox2 {
-    width: 50%;
+    flex:1;
 }

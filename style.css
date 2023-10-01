@@ -4,12 +4,15 @@ html {
 
 body {
     background-image: linear-gradient(#FC5E55, #FA4083);
+    /* background-image: url(image/image-lion-background.png); */
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
     
 }
 .container {
+    margin-top: 2rem;
     width : 1024px;
     min-height: 300px;
     margin-left: auto;
@@ -29,40 +32,78 @@ main {
     align-items: center;
 }
 
-.cards {
-    min-height: 300px;
-    background-color: cornflowerblue;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card1 {
-    min-height: 300px;
-    background-color: crimson;
-    width: 300px;
-}
-
-.card2 {
-    min-height: 300px;
-    background-color: rgb(217, 68, 98);
-    width: 300px;
-}
-
-.card3 {
-    min-height: 300px;
-    background-color: rgb(226, 151, 166);
-    width: 300px;
-}
-
 .herobox1 {
     flex:2;
+    padding-right: 2rem;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    padding-bottom:1rem;
+}
+
+p {
+    line-height: 1.5rem;
+    padding-bottom:0.5rem;
 }
 
 .herobox2 {
     flex:1;
 }
 
-h1{
+.cards {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card1 > img,.card2 > img ,.card3 > img{
+    padding-top: 1rem;
+}
+
+.card1 > img {
+    padding-left:2rem;
+}
+
+.card1 {
+    min-height: 18rem;
+    background-size: cover;
+    background-position: top;
+    background-image: url(image/image-background-card1.jpg);
+    width: 300px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card2 {
+    min-height: 18rem;
+    background-size:cover;
+    background-image: url(image/image-background-card2.jpg);
+    width: 300px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card3 {
+    min-height: 18rem;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(image/image-background-card3.jpg);
+    width: 300px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h2{
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Playfair Display', serif;
-    font-size: 40px;;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.para {
+    font-size: 0.8rem;
 }

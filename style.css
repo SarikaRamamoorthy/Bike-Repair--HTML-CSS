@@ -1,5 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #fc5e55;
+    background-image: linear-gradient(#FC5E55, #FA4083);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
 }
 .container {
     width : 1024px;
@@ -52,4 +60,9 @@ main {
 
 .herobox2 {
     flex:1;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;;
 }

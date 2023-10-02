@@ -4,7 +4,6 @@ html {
 
 body {
     background-image: linear-gradient(#FC5E55, #FA4083);
-    /* background-image: url(image/image-lion-background.png); */
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -12,9 +11,8 @@ body {
     
 }
 .container {
-    margin-top: 2rem;
     width : 1024px;
-    min-height: 300px;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right:auto;
 }
@@ -24,12 +22,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 main {
     min-height: 300px;
     display: flex;
     align-items: center;
+    padding-bottom: 50px;
 }
 
 .herobox1 {
@@ -40,7 +40,7 @@ main {
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 3.25rem;
-    padding-bottom:1rem;
+    padding-bottom:2rem;
 }
 
 p {
@@ -52,52 +52,74 @@ p {
     flex:1;
 }
 
+.herobox2 img {
+    border-radius: 3px;
+}
+
 .cards {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    font-size: 6rem;
+    padding-bottom: 100px;
 }
 
-.card1 > img,.card2 > img ,.card3 > img{
+a {
+    text-decoration: none;
+}
+
+a.mybutton {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: white;
+    color: #FA4083;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+/* .buttonoutline {
+    padding-top: 20px;
+} */
+
+/* .card1 > img,.card2 > img ,.card3 > img{
     padding-top: 1rem;
+} */
+
+.card1 a i,.card2 a i ,.card3 a i{
+    padding-top: 2rem;
+}
+
+.card1 p,.card2 p,.card3 p{
+    padding-left:2rem;
+    padding-right:2rem;;
 }
 
 .card1 > img {
     padding-left:2rem;
 }
 
-.card1 {
+.card1,.card2,.card3 {
     min-height: 18rem;
     background-size: cover;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.card1 {
     background-position: top;
     background-image: url(image/image-background-card1.jpg);
-    width: 300px;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .card2 {
-    min-height: 18rem;
-    background-size:cover;
     background-image: url(image/image-background-card2.jpg);
-    width: 300px;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .card3 {
-    min-height: 18rem;
-    background-size: cover;
     background-position: bottom;
     background-image: url(image/image-background-card3.jpg);
-    width: 300px;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 h2{
-    margin-left: auto;
-    margin-right: auto;
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     padding-bottom: 1rem;

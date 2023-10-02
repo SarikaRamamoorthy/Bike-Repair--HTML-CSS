@@ -1,8 +1,5 @@
-html {
-    height: 100%;
-}
-
 body {
+    /* min-height: max-content; */
     background-image: linear-gradient(#FC5E55, #FA4083);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -23,16 +20,20 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
+    border-bottom: 1px lightgrey solid;
 }
+
 
 main {
     min-height: 300px;
     display: flex;
     align-items: center;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .herobox1 {
+    padding-left: 4rem;
     flex:2;
     padding-right: 2rem;
 }
@@ -41,6 +42,7 @@ h1{
     font-family: 'Playfair Display', serif;
     font-size: 3.25rem;
     padding-bottom:2rem;
+    text-shadow: 1px 1px 2px black;
 }
 
 p {
@@ -53,8 +55,21 @@ p {
 }
 
 .herobox2 img {
-    border-radius: 3px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
 }
+
+.herobox2 img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+    transition: ease-in-out;
+  }
+
+  @keyframes shake {
+    80% { transform: translate(60px); }
+    90% { transform: translate(40px); }
+    100% { transform: translate(20px); }
+  }
 
 .cards {
     display: flex;
@@ -75,8 +90,28 @@ a.mybutton {
     color: #FA4083;
     display: inline-block;
     border-radius: 8px;
+    box-shadow: 0px 3px 6px black;
+    font-family: 'Playfair Display', serif;
 }
 
+nav a.mybutton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px white;
+    margin-left:30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    color: white;
+    background-color:#FC5E55;
+    transition: 2s ease-out 100ms;
+
+}
+
+nav a.mybutton:hover{
+    color: #FC5E55;
+    background-color: white;
+}
 /* .buttonoutline {
     padding-top: 20px;
 } */
@@ -91,11 +126,7 @@ a.mybutton {
 
 .card1 p,.card2 p,.card3 p{
     padding-left:2rem;
-    padding-right:2rem;;
-}
-
-.card1 > img {
-    padding-left:2rem;
+    padding-right:2rem;
 }
 
 .card1,.card2,.card3 {
@@ -103,6 +134,7 @@ a.mybutton {
     background-size: cover;
     width: 300px;
     border-radius: 5px;
+    box-shadow: 5px 5px 12px black;
 }
 
 .card1 {
@@ -128,4 +160,22 @@ h2{
 
 .para {
     font-size: 0.8rem;
+}
+
+.testimonials {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tbox {
+    width:45%;
+    border:1px solid white;
+    box-shadow: 0px 3px lightgray;
+    border-radius: 20px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-height: 50%;
 }

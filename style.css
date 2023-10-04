@@ -1,12 +1,17 @@
-body {
-    /* min-height: max-content; */
+html {
     background-image: linear-gradient(#FC5E55, #FA4083);
+}
+
+body {
+    background-image: url(image/image-lion-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.125rem;
-    
+    font-size: 1.125rem;  
 }
+
 .container {
     width : 1024px;
     margin-top: 2rem;
@@ -23,7 +28,6 @@ header {
     border-bottom: 1px lightgrey solid;
 }
 
-
 main {
     min-height: 300px;
     display: flex;
@@ -36,6 +40,11 @@ main {
     padding-left: 4rem;
     flex:2;
     padding-right: 2rem;
+}
+
+.herobox1 a:hover {
+    background-color: lightgrey;
+    box-shadow: 4px 4px 8px black;
 }
 
 h1{
@@ -70,6 +79,18 @@ p {
     90% { transform: translate(40px); }
     100% { transform: translate(20px); }
   }
+  
+  @keyframes Shine {
+    0%{   
+        background-color:#FC5E55;
+    }
+    50%{
+        background-color:#fb8882;
+    }
+    100%{
+        background-color:#FC5E55;
+    }
+  }
 
 .cards {
     display: flex;
@@ -80,6 +101,7 @@ p {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -94,6 +116,47 @@ a.mybutton {
     font-family: 'Playfair Display', serif;
 }
 
+.herobox1 .mybutton:active{
+    transition: ease-in 0.1s;
+    scale:0.85;
+}
+
+.navbutton {
+    display: inline-block;
+}
+
+ .drop  {
+    position :absolute;
+    display: none;
+ }
+
+ .down {
+    margin-top:10px;
+     padding: 10px 15px;
+     border-radius: 3px;
+     margin-left:30px;
+     border-style: solid;
+     border-width: 1px;
+     background-color:#FC5E55;
+     border-color: white;
+     font-size: 14px;
+     font-family: 'Playfair Display', serif;
+     transition-duration: 0s;
+     transition: ease-in-out;
+    }
+    
+.navbutton:hover .drop{
+    display: block;
+}
+.down:hover{
+    animation-name: Shine;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+/* .down:hover::after{
+    transition: all 0.8s;
+ } */
+
 nav a.mybutton{
     padding: 10px 20px;
     border-radius: 5px;
@@ -104,7 +167,7 @@ nav a.mybutton{
     border-color: white;
     color: white;
     background-color:#FC5E55;
-    transition: 2s ease-out 100ms;
+    transition: 0.2s ease-out 100ms;
 
 }
 
@@ -112,6 +175,7 @@ nav a.mybutton:hover{
     color: #FC5E55;
     background-color: white;
 }
+
 /* .buttonoutline {
     padding-top: 20px;
 } */
@@ -178,4 +242,32 @@ h2{
     margin-top: 50px;
     margin-bottom: 50px;
     min-height: 50%;
+}
+
+.tbox:hover {
+    animation-name: shine;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+@keyframes shine {
+    0%{
+        background-color: #fa40845e;
+    }
+    50%{
+        background-color: #fa4084aa;
+    }
+    100%{
+        background-color: #fa4084cb;
+    }
+}
+
+section h1 {
+    padding: 30px 30px;
+}
+
+section p {
+    margin: 40px 30px 70px 30px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

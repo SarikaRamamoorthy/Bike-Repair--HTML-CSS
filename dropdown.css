@@ -1,0 +1,31 @@
+body {
+    background-color: rgba(229, 73, 105, 0.893);
+}
+a {
+    text-decoration: none;
+    color: white;
+    border: 5px white;
+}
+.navbutton {
+    display:inline-block;
+    width: 100px;
+    position: relative;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    margin: 0px -10px;
+}
+
+.drop {
+    display: none;
+    padding: 10px 30px;
+    z-index: 99;
+}
+    
+.navbutton:hover .drop{
+    display: block;
+    color: aqua;
+}

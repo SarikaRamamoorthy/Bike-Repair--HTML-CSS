@@ -57,8 +57,57 @@
         </header>
 
         <section>
-                <h1>Contact Us</h1>
-                <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+            <h1>Contact Us</h1>
+            <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a
+                matter of hours to help you.</p>
+                
+            <div class="forms">
+                <form action="mail.php">
+
+                    <div class="wrapper">
+                        <label for="name">Name  </label><br>
+                        <input type="text" name="name" id="name" placeholder="First Name">
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="mail">Email  </label><br>
+                        <input type="email" name="mail" id="mail" placeholder="abc@gmail.com">
+                    </div>
+
+                    <div class="wrapper">
+                        <textarea name="message" id="msg" cols="30" rows="10" placeholder="Tell us what you think about us"></textarea>
+                    </div>
+
+                    <div class="wrapper">
+                        <input type="checkbox" name="box" id="box" checked>
+                        <label for="box">Sign up for newsletter</label>
+                    </div>
+
+                    <div class="wrapper">
+                        <p>How is the form ?</p>
+                        <input type="radio" name="choose" id="1">
+                        <label for="1">Nice</label> &nbsp;&nbsp;
+                        <input type="radio" name="choose" id="2">
+                        <label for="2">could be better</label>
+                    </div>
+
+                    <div class="wrapper">
+                        <label for="country">Country</label>&nbsp;
+                        <select name="country" id="country">
+                            <option value="choose" selected>Choose a country</option>
+                            <option value="India">India</option>
+                            <option value="Swiz">Swiz</option>
+                        </select>
+                    </div>
+
+                    <div class="wrapper">
+                        <input type="submit" value="Fire Away" class="mybutton">
+                    </div>
+
+                </form>
+            </div>
+        
+        
         </section>
 
 
